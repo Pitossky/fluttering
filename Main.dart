@@ -19,7 +19,7 @@ void main() {
         case 1:
           print('View All Tasks');
           Task.getTasks().forEach((task) => print(
-              '${task.id}. Task name: ${task.taskName}, Duration: ${task.duration}, Date: ${task.date}'));
+              '${task.id}. Task name: ${task.taskName}, Duration: ${task.duration}, Day: ${task.taskDay}, Month: ${task.taskMonth}, Year: ${task.taskYear}'));
           break;
         case 2:
           print('Enter name of Task');
@@ -28,9 +28,14 @@ void main() {
           int id = int.parse(stdin.readLineSync());
           print('Enter Task duration');
           dynamic duration = stdin.readLineSync();
-          print('Enetr Task date');
-          double date = double.parse(stdin.readLineSync());
-          Task.addTask(Task(id, taskName, duration, date));
+          print('Enetr Task day');
+          dynamic taskDay = stdin.readLineSync();
+          print('Enter Task Month');
+          dynamic taskMonth = stdin.readLineSync();
+          print('Enter Year of Task');
+          int taskYear = int.parse(stdin.readLineSync());
+          Task.addTask(
+              Task(id, taskName, duration, taskDay, taskMonth, taskYear));
           print('$taskName created successfully');
           break;
         case 3:

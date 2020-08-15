@@ -1,19 +1,31 @@
+import 'Date.dart';
+
 class Task {
   int id = 0;
   String taskName;
-  dynamic duration;
-  double date;
+  String duration;
+  dynamic taskDay;
+  dynamic taskMonth;
+  int taskYear;
 
-  Task(this.id, this.taskName, this.duration, this.date);
+  Task(this.id, this.taskName, this.duration, this.taskDay, this.taskMonth,
+      this.taskYear);
 
-  static Task taskOne = Task(1, 'Swimming', '30min', 12.08);
-  static Task taskTwo = Task(2, 'Running', '45min', 13.09);
-  static Task taskThree = Task(3, 'Cooking', '25min', 20.01);
+  static DateTime dayOne = DateTime(01, 'Monday', 'August', 2020);
+  static DateTime dayTwo = DateTime(02, 'Wednesday', 'July', 2020);
+  static DateTime dayThree = DateTime(03, 'Friday', 'April', 2020);
+
+  static Task taskOne =
+      Task(1, 'Swimming', '30min', dayOne.day, dayOne.month, dayOne.year);
+  static Task taskTwo =
+      Task(2, 'Running', '45min', dayTwo.day, dayTwo.month, dayTwo.year);
+  static Task taskThree =
+      Task(3, 'Cooking', '25min', dayThree.day, dayThree.month, dayThree.year);
 
   static Set<Task> tasks = {
-    Task(1, 'Swimming', '30min', 12.08),
-    Task(2, 'Running', '45min', 13.09),
-    Task(3, 'Cooking', '25min', 20.01)
+    Task(1, 'Swimming', '30min', dayOne.day, dayOne.month, dayOne.year),
+    Task(2, 'Running', '45min', dayTwo.day, dayTwo.month, dayTwo.year),
+    Task(3, 'Cooking', '25min', dayThree.day, dayThree.month, dayThree.year)
   };
 
   static void addTask(Task newTask) {
@@ -36,6 +48,6 @@ class Task {
   String toString() {
     // ignore: todo
     // TODO: implement toString
-    return "Task: $id, $taskName, $duration, $date";
+    return "Task: $id, $taskName, $duration, $taskDay, $taskMonth, $taskYear";
   }
 }
