@@ -11,7 +11,7 @@ class MyMainApp extends StatelessWidget {
           primarySwatch: Colors.deepOrange, accentColor: Colors.deepPurple),
       home: Scaffold(
           appBar: AppBar(
-            title: Text("Food List"),
+            title: Text("Food List!"),
           ),
           body: ImageManager('Food Tester')),
     );
