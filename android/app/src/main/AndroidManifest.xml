@@ -1,7 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="com.example.xylophone">
    <application
         android:label="xylophone"
+=======
+    package="com.example.business_card">
+   <application
+        android:label="business_card"
+>>>>>>> 1fd54d67170f7a994ffc6656a310c8ae166c6028
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
