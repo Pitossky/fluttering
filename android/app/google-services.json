@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "476125879760",
+    "project_id": "chat-app-c3cc3",
+    "storage_bucket": "chat-app-c3cc3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:476125879760:android:7c983dc600d982480fedd5",
+        "android_client_info": {
+          "package_name": "com.PeterOlayooye.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "476125879760-50u50qu92p7to3m30kq857jr50973l2q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2ZpxuLlBMv6uvtGmjjcjxtehQSTQQufc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "476125879760-50u50qu92p7to3m30kq857jr50973l2q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
