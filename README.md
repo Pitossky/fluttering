@@ -6,6 +6,6 @@ A ToDo List app that adds, checks-off and deletes tasks.
 
 ## Getting Started
 
-This project is implements the Provider package.
+This project implements the Provider package.
 
 
